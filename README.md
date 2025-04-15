@@ -1,4 +1,4 @@
-# thingsboard_edge
+# thingsboard_edge_compose
 
 ThingsBoard的边缘计算节点的docker compose配置
 > 参考文档：https://thingsboard.io/docs/user-guide/install/edge/docker/
