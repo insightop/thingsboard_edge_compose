@@ -16,6 +16,14 @@ ThingsBoard的边缘计算节点的docker compose配置
 - 1883: MQTT
 - 5683-5688: UDP
 
+## 访问
+- 地址：http://localhost:8080
+- 账号（自动使用Server上配置的tenant账户）：
+  - Tenant Administrator: tenant@thingsboard.org / tenant
+  - 如需增加用户，在面板的`客户`中手动增加（与server的customer貌似是分开的）
+
+
 ## 注意
 
 - Edge通过RPC协议连接到Server`7070`端口，确保防火墙允许通过
+
