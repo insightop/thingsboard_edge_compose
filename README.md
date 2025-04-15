@@ -10,6 +10,12 @@ ThingsBoard的边缘计算节点的docker compose配置
 
 `CLOUD_RPC_HOST`: 主机的ip地址
 
+## 启动
+
+```
+sudo docker compose up -d
+```
+
 ## 端口
 
 - 8080: HTTP
