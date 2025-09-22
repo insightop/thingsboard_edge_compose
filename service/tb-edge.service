@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone='no'?>
+<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+
+<service-group>
+  <!-- 广播名，会在局域网显示 -->
+  <name replace-wildcards="yes">%h</name>
+
+  <!-- HTTP API -->
+  <service>
+    <type>_http._tcp</type>
+    <port>8080</port>
+  </service>
+
+  <!-- MQTT -->
+  <service>
+    <type>_mqtt._tcp</type>
+    <port>1883</port>
+  </service>
+</service-group>
