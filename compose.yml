@@ -3,7 +3,7 @@ name: thingsboard_edge
 services:
   tb-edge:
     restart: always
-    image: "thingsboard/tb-edge:4.1.0EDGE"
+    image: "thingsboard/tb-edge:4.2.0EDGE"
     ports:
       - "8080:8080"
       - "1883:1883"
