@@ -10,15 +10,15 @@ services:
       - "5683-5688:5683-5688/udp"
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/tb-edge
-      CLOUD_ROUTING_KEY: ${CLOUD_ROUTING_KEY} # e.g. 19ea7ee8-5e6d-e642-4f32-05440a529015
-      CLOUD_ROUTING_SECRET: ${CLOUD_ROUTING_SECRET} # e.g. bztvkvfqsye7omv9uxlp
-      CLOUD_RPC_HOST: ${CLOUD_RPC_HOST} # e.g. 192.168.1.1 or demo.thingsboard.io
+      CLOUD_ROUTING_KEY: ${CLOUD_ROUTING_KEY}
+      CLOUD_ROUTING_SECRET: ${CLOUD_ROUTING_SECRET}
+      CLOUD_RPC_HOST: ${CLOUD_RPC_HOST}
     volumes:
       - tb-edge-data:/data
       - tb-edge-logs:/var/log/tb-edge
   postgres:
     restart: always
-    image: "postgres:15"
+    image: "postgres:16"
     ports:
       - "5432"
     environment:
