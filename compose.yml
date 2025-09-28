@@ -15,6 +15,11 @@ services:
         volumes:
             - tb-edge-data:/data
             - tb-edge-logs:/var/log/tb-edge
+        deploy:
+            resources:
+                reservations:
+                    cpus: "1"
+                    memory: 1G
     postgres:
         restart: always
         image: "postgres:16"
@@ -33,7 +38,7 @@ services:
         restart: always
         network_mode: host
         volumes:
-            - ./services:/etc/avahi/services
+            - ./avahi/services:/etc/avahi/services
 
 volumes:
     tb-edge-data:
